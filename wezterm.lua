@@ -1,4 +1,5 @@
 local wezterm = require 'wezterm'
+
 local act = wezterm.action
 
 local config = {}
@@ -20,8 +21,6 @@ config.window_frame = {
   inactive_titlebar_bg = '#353C4A',
 }
 
--- config.tab_bar_at_bottom = true
--- config.use_fancy_tab_bar = false
 config.inactive_pane_hsb = {
   saturation = 1.0,
   brightness = 0.6,
@@ -115,64 +114,6 @@ config.colors = {
       fg_color = '#282D38',
     },
   },
-  -- tab_bar = {
-  --   background = '#353C4A',
-  --   inactive_tab_edge = '#9B8E8A',
-  --
-  --   active_tab = {
-  --     bg_color = '#5071B2',
-  --     fg_color = '#ffffff',
-  --   },
-  --
-  --   inactive_tab = {
-  --     bg_color = '#9B8E8A',
-  --     fg_color = '#000000',
-  --   },
-  --
-  --   inactive_tab_hover = {
-  --     bg_color = '#5071B2',
-  --     fg_color = '#ffffff',
-  --   },
-  --
-  --   new_tab = {
-  --     bg_color = '#9B8E8A',
-  --     fg_color = '#000000',
-  --   },
-  --
-  --   new_tab_hover = {
-  --     bg_color = '#5071B2',
-  --     fg_color = '#ffffff',
-  --   },
-  -- },
-  -- tab_bar = {
-  --   inactive_tab_edge = '#2E3440',
-  --   background = '#353C4A',
-  --
-  --   active_tab = {
-  --     bg_color = '#434C5E',
-  --     fg_color = '#c0c0c0',
-  --   },
-  --
-  --   inactive_tab = {
-  --     bg_color = '#2E3440',
-  --     fg_color = '#c0c0c0',
-  --   },
-  --
-  --   inactive_tab_hover = {
-  --     bg_color = '#434C5E',
-  --     fg_color = '#c0c0c0',
-  --   },
-  --
-  --   new_tab = {
-  --     bg_color = '#434C5E',
-  --     fg_color = '#c0c0c0',
-  --   },
-  --
-  --   new_tab_hover = {
-  --     bg_color = '#81A1C1',
-  --     fg_color = '#434C5E',
-  --   },
-  -- },
 }
 
 return config
