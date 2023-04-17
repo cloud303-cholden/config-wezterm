@@ -1,6 +1,5 @@
 local wezterm = require('wezterm')
 local act = wezterm.action
-local mux = wezterm.mux
 local config = {}
 
 if wezterm.config_builder then
@@ -25,15 +24,6 @@ config.inactive_pane_hsb = {
   saturation = 1.0,
   brightness = 0.6,
 }
-
-wezterm.on('gui-startup', function(cmd)
-  local tab, pane, window = mux.spawn_window(cmd or {})
-  pane:split({ direction = 'Top' })
-  pane:split({ direction = 'Right' })
-  local pane = tab:get_pane_direction('Up')
-  pane:activate()
-  pane:split({ direction = 'Right' })
-end)
 
 config.keys = {
   {
