@@ -12,6 +12,7 @@ config.font = wezterm.font_with_fallback({
   'CaskaydiaCove Nerd Font Mono',
 })
 config.window_background_opacity = 0.95
+config.adjust_window_size_when_changing_font_size = false
 
 config.window_frame = {
   font = wezterm.font({ family = 'CaskaydiaCove Nerd Font Mono', weight = 'Bold' }),
